@@ -13,31 +13,41 @@ body {
 
 header {
     background-color: #a30000;
-    color: #fff;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
     padding: 20px;
 }
 
-#titulo_principal{
-    background-color: #a30000;
+.my_portfolio{
     margin: 0;
     padding: 0;
-    font-size: 36px;
     text-align: center;
+}
+
+.my_portfolio a{
+    text-decoration: none;
     color: #fff;
 }
 
+.titulo_principal{
+    font-size: 2rem;
+}
+
+.nombre{
+    margin: .2rem;
+    font-size: .8rem;
+}
+
 .nav-bar{
-    background-color: #a30000;
     display: flex;
-    padding: 15px 0 0;
+    padding: 1rem 2rem;
     list-style: none;
-    justify-content: space-around;
+    justify-content:space-evenly;
 }
 
 .nav-bar a{
     text-decoration: none;
-    color: #fff;
+    color: #fff;    
     font-size: 1.1rem;
 }
 
@@ -60,12 +70,12 @@ img{
     align-items: center;
 }
 
-article{
-    float: left;
+.contenedor{
+    display: flex;
+    flex-direction: row;
 }
 
 aside{
-    float: right;
-    border: 2px solid black;
+    border: 1px solid black;
     padding: 1rem;
 }
